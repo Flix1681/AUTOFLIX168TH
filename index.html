@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657695941-ZRkLqzWJ" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "พี่ว่างไหม",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://lh5.googleusercontent.com/d/1dlzhpFgZEtSkCw-mF8yZLJasjgbgDLdY?w=auto",
+    "size": "full"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "AUTOFLIX168TH",
+        "size": "xl",
+        "weight": "bold"
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "contents": [
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "text",
+            "text": "Free 50.- / 53.- / 110.- / 550.-",
+            "margin": "md",
+            "size": "sm",
+            "color": "#999999"
+          }
+        ],
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "แจחเคsดิตwรี ",
+                "size": "sm",
+                "color": "#aaaaaa"
+              },
+              {
+                "type": "text",
+                "text": "สมาชิกใหม่หรือเก่าก็รับได้ (ได้ทุกวัน)",
+                "size": "sm",
+                "color": "#666666",
+                "wrap": true,
+                "offsetEnd": "xxl"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "ติดต่อรับ",
+          "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=124zxfty"
+        },
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แชร์ให้เพื่อน",
+          "uri": "https://liff.line.me/1657695941-ZRkLqzWJ"
+        }
+      }
+    ]
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
